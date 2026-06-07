@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.ext == "md"
+    - review_required == true
+properties:
+  status:
+    displayName: Status
+  priority:
+    displayName: Priority
+  hermes_status:
+    displayName: Hermes Status
+  hermes_artifacts:
+    displayName: Artifacts
+views:
+  - type: table
+    name: Review Required

@@ -1,6 +1,6 @@
 # Security Policy
 
-LumiBench OS is local-first and should never require publishing private vault material.
+Obsidian Agent OS is local-first and should never require publishing private vault material.
 
 ## Reporting a vulnerability
 

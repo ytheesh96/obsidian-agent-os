@@ -1,6 +1,6 @@
-# LumiBench OS
+# Obsidian Agent OS
 
-LumiBench OS is a local-first AI task workspace for Obsidian + Hermes.
+Obsidian Agent OS is a local-first AI task workspace for Obsidian + Hermes.
 
 Promise: turn an Obsidian TaskNote into Hermes-executed work with visible progress, a durable artifact, and a human review gate.
 
@@ -8,7 +8,7 @@ This repository is a sanitized open-source starter/reference implementation. It 
 
 ## What is included in this increment
 
-- A repo skeleton for the public `lumibench-os` project.
+- A repo skeleton for the public `obsidian-agent-os` project.
 - A deterministic starter-vault TaskNote template for Hermes-backed tasks.
 - One fake research-packet sample TaskNote showing the intended shape.
 - Documentation placeholders for the Obsidian Agent OS architecture language, privacy model, first task loop, review gate, and demo workflows.
@@ -25,7 +25,7 @@ This repository is a sanitized open-source starter/reference implementation. It 
 ## Repository layout
 
 ```text
-lumibench-os/
+obsidian-agent-os/
   README.md
   LICENSE
   SECURITY.md
@@ -49,4 +49,4 @@ These checks are intentionally dependency-free so the starter pack can be inspec
 
 ## Status
 
-This is an OSS MVP skeleton, not a production bridge implementation. The public product name is LumiBench OS. “Obsidian Agent OS” appears only as descriptive architecture language for the pattern of using Obsidian as the local task workspace and Hermes as the execution layer.
+This is an OSS MVP skeleton, not a production bridge implementation. The working public name is Obsidian Agent OS, with Obsidian as the local task workspace and Hermes as the execution layer.

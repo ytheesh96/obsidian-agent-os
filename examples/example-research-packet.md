@@ -1,6 +1,6 @@
 # Research Packet: Fictional Neighborhood Library Hours
 
-This is invented sample content for the LumiBench OS starter vault.
+This is invented sample content for the Obsidian Agent OS starter vault.
 
 | Branch | Weekday hours | Weekend hours | Notes |
 |---|---:|---:|---|

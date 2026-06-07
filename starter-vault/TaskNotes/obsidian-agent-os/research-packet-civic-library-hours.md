@@ -4,7 +4,7 @@ priority: normal
 task_kind: research-packet
 hermes_profile: researcher
 hermes_id: t_demo_research_packet_001
-hermes_board: lumibench-os-demo
+hermes_board: obsidian-agent-os-demo
 hermes_status: blocked
 hermes_artifacts:
   - examples/example-research-packet.md

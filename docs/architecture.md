@@ -1,6 +1,6 @@
 # Architecture
 
-LumiBench OS uses Obsidian Agent OS as descriptive architecture language: Obsidian is the local-first workspace and Hermes is the execution layer.
+Obsidian Agent OS uses Obsidian Agent OS as descriptive architecture language: Obsidian is the local-first workspace and Hermes is the execution layer.
 
 The bridge boundary is intentionally narrow:
 

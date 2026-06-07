@@ -4,7 +4,7 @@ priority: normal
 task_kind: research-packet
 hermes_profile: researcher
 hermes_id: null
-hermes_board: lumibench-os-demo
+hermes_board: obsidian-agent-os-demo
 hermes_status: not-submitted
 hermes_artifacts: []
 review_required: true

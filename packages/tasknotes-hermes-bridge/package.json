@@ -1,5 +1,5 @@
 {
-  "name": "@lumibench-os/tasknotes-hermes-bridge",
+  "name": "@obsidian-agent-os/tasknotes-hermes-bridge",
   "version": "0.0.1",
   "private": true,
   "description": "Starter bridge skeleton for mapping Obsidian TaskNotes to Hermes Kanban tasks.",

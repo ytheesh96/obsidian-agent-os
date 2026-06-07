@@ -19,7 +19,7 @@ const requiredPaths = [
   'starter-vault/AGENTS.md',
   'starter-vault/Templates/Hermes Task.md',
   'starter-vault/Templates/Review Decision.md',
-  'starter-vault/TaskNotes/lumibench-os/research-packet-civic-library-hours.md',
+  'starter-vault/TaskNotes/obsidian-agent-os/research-packet-civic-library-hours.md',
   'starter-vault/TaskNotes/Views/review-required.base',
   'examples/example-research-packet.md',
   'scripts/secret-scan.js',
@@ -52,7 +52,7 @@ for (const rel of [
 }
 
 const template = fs.readFileSync(path.join(root, 'starter-vault/Templates/Hermes Task.md'), 'utf8');
-const sample = fs.readFileSync(path.join(root, 'starter-vault/TaskNotes/lumibench-os/research-packet-civic-library-hours.md'), 'utf8');
+const sample = fs.readFileSync(path.join(root, 'starter-vault/TaskNotes/obsidian-agent-os/research-packet-civic-library-hours.md'), 'utf8');
 const missingTemplateFields = requiredFields.filter((field) => !new RegExp(`^${field}:`, 'm').test(template));
 const missingSampleFields = requiredFields.filter((field) => !new RegExp(`^${field}:`, 'm').test(sample));
 if (missingTemplateFields.length || missingSampleFields.length) {

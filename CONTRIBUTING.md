@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping with LumiBench OS.
+Thank you for helping with Obsidian Agent OS.
 
 ## Development principles
 

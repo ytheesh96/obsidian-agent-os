@@ -1,0 +1,29 @@
+name: Verify starter pack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify structure and secret hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify starter-pack structure
+        run: node scripts/verify-starter-pack.js
+
+      - name: Run privacy-oriented secret scan
+        run: node scripts/secret-scan.js

@@ -35,7 +35,7 @@ Human review, revision, or archive
 |---|---|---|
 | Planning substrate | Note-native task and time tracking in Obsidian; each task is a Markdown note with structured frontmatter and Bases-powered views. | [tasknotes](https://github.com/ytheesh96/tasknotes) |
 | Workspace starter | Reference workspace showing the TaskNotes → Hermes → artifact review loop. | [obsidian-agent-os](https://github.com/ytheesh96/obsidian-agent-os) |
-| Execution panes | Local CLI profile launch/resume, embedded terminal panes, prompt handoff, and context-aware environment wiring. | Agent Shell |
+| Execution panes | Local CLI profile launch/continue flows, embedded terminal panes, prompt transfer, and context-aware environment wiring. | Agent Shell |
 | Workspace context | Active-note context, editor selection, cursor state, linked notes, open workspace surfaces, and pinned evidence. | Context API |
 | Artifact views | Rendered HTML/HTM dashboards inside Obsidian with constrained vault-relative navigation. | HTML View |
 
@@ -55,7 +55,7 @@ Obsidian Agent OS packages the workspace story into a starter implementation: ex
 
 ### Agent Shell
 
-Agent Shell is the execution-pane layer for launching and resuming local CLI sessions through configurable profiles. It owns embedded terminal panes, prompt handoff, focus/restart behavior, and Context API environment wiring.
+Agent Shell is the execution-pane layer for launching and continuing local CLI sessions through configurable profiles. It owns embedded terminal panes, prompt transfer, focus/restart behavior, and Context API environment wiring.
 
 ### Context API
 

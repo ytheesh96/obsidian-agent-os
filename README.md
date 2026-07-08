@@ -2,13 +2,6 @@
 
 A public hub for the Obsidian OS toolchain: local-first plugins and workflows for turning notes, task plans, live context, and generated artifacts into an inspectable AI workspace.
 
-This repository is no longer a starter vault. It is an index for the tools that make up the Obsidian Agent OS pattern.
-
-## Tools page
-
-GitHub Pages index:
-
-<https://ytheesh96.github.io/obsidian-agent-os/>
 
 ## What this collection is
 
@@ -46,23 +39,6 @@ HTML View artifacts
 Human review in Obsidian
 ```
 
-## Repository structure
-
-```text
-README.md      # repository overview
-docs/index.md  # GitHub Pages tools index
-```
-
-## Public/private boundary
-
-This hub does not include a starter vault, private workspace notes, live task data, unpublished research content, or hidden agent outputs. Each linked tool owns its own installation, usage, and development documentation.
-
-## Maintaining the hub
-
-When adding or renaming Obsidian OS tools, update both:
-
-1. `README.md` for the GitHub repository view.
-2. `docs/index.md` for the GitHub Pages index.
 
 ## License
 

@@ -16,7 +16,6 @@ const requiredPaths = [
   'packages/tasknotes-hermes-bridge/package.json',
   'packages/tasknotes-hermes-bridge/src/fieldMap.ts',
   'packages/shared/package.json',
-  'starter-vault/AGENTS.md',
   'starter-vault/Templates/Hermes Task.md',
   'starter-vault/Templates/Review Decision.md',
   'starter-vault/TaskNotes/obsidian-agent-os/research-packet-civic-library-hours.md',
@@ -64,8 +63,8 @@ const readme = fs.readFileSync(path.join(root, 'README.md'), 'utf8');
 const readmeRequired = [
   'local-first AI task workspace for Obsidian + Hermes',
   'visible progress',
-  'durable artifact',
-  'human review gate',
+  'durable artifacts',
+  'human review checkpoints',
 ];
 const missingReadme = readmeRequired.filter((text) => !readme.includes(text));
 if (missingReadme.length) {

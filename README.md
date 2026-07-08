@@ -82,36 +82,6 @@ HTML View is the artifact-view layer. It opens vault-local HTML and HTM files in
 4. Open the artifact from `hermes_artifacts`.
 5. Review the result, request changes, or archive the task.
 
-## Repository layout
-
-```text
-obsidian-agent-os/
-  README.md
-  LICENSE
-  SECURITY.md
-  CONTRIBUTING.md
-  docs/
-  packages/
-    shared/
-    tasknotes-hermes-bridge/
-  starter-vault/
-    Templates/
-    TaskNotes/
-  examples/
-  scripts/
-```
-
-## Quick check
-
-```bash
-node scripts/verify-starter-pack.js
-node scripts/secret-scan.js
-```
-
-## Status
-
-This is an OSS starter skeleton for a local-first Obsidian + Hermes workflow, not a packaged production bridge.
-
 ## License
 
 MIT.

@@ -1,86 +1,68 @@
 # Obsidian Agent OS
 
-[![Verify starter pack](https://github.com/ytheesh96/obsidian-agent-os/actions/workflows/verify.yml/badge.svg)](https://github.com/ytheesh96/obsidian-agent-os/actions/workflows/verify.yml)
+A public hub for the Obsidian OS toolchain: local-first plugins and workflows for turning notes, task plans, live context, and generated artifacts into an inspectable AI workspace.
 
-## Agentic Workspace and Execution Platform
+This repository is no longer a starter vault. It is an index for the tools that make up the Obsidian Agent OS pattern.
 
-Obsidian Agent OS is a local-first AI task workspace for Obsidian + Hermes. It turns human-planned work into visible progress, durable artifacts, and explicit human review checkpoints.
+## Tools page
 
-The project connects Obsidian notes, TaskNotes planning, Hermes Kanban/Loop orchestration, local CLI execution, live workspace context, and rendered artifact views. Instead of leaving work inside disposable chat windows, each task starts from an explicit note, carries source context, produces inspectable output, and returns to the workspace for review.
+GitHub Pages index:
+
+<https://ytheesh96.github.io/obsidian-agent-os/>
+
+## What this collection is
+
+Obsidian Agent OS is a local-first workspace pattern for AI-assisted work in Obsidian. The goal is to keep planning, execution context, artifacts, and review checkpoints visible instead of trapping work inside disposable chat sessions.
+
+The toolchain is split into focused repositories:
+
+- note-native task planning
+- local agent execution panes
+- live workspace context capture
+- rendered artifact views
+- human review inside the vault
+
+## Tools index
+
+| Area | Tool | What it provides |
+| --- | --- | --- |
+| Planning substrate | [TaskNotes](https://github.com/ytheesh96/tasknotes) | Note-native task and time tracking in Obsidian, with tasks stored as Markdown notes and structured frontmatter |
+| Agent execution panes | [Agent Shell](https://github.com/ytheesh96/agent-shell) | Local CLI profile launch/continue flows, embedded terminal panes, and prompt transfer inside Obsidian |
+| Live workspace context | [Context API](https://github.com/ytheesh96/context-api) | Local routes for active note, editor selection, cursor state, linked notes, open workspace surfaces, and pinned context |
+| Rendered artifact views | [HTML View](https://github.com/ytheesh96/html-view) | Vault-local HTML/HTM rendering inside Obsidian with constrained navigation for dashboards and generated artifacts |
+| Toolchain hub | [Obsidian Agent OS](https://github.com/ytheesh96/obsidian-agent-os) | Public index for the Obsidian OS tools and the local-first agent workspace pattern |
+
+## Workflow shape
 
 ```text
-TaskNotes in Obsidian
+TaskNotes planning
         ↓
-Hermes Kanban / Loop task graph
+Agent Shell execution
         ↓
-Local execution profiles
+Context API evidence
         ↓
-Context API + pinned workspace evidence
+HTML View artifacts
         ↓
-HTML/artifact views
-        ↓
-Human review, revision, or archive
+Human review in Obsidian
 ```
 
-### What this demonstrates
+## Repository structure
 
-- A local-first workspace model where planning notes, task state, and artifacts remain inspectable.
-- A task-to-execution bridge from Obsidian TaskNotes into durable Hermes Kanban cards with status, comments, artifacts, and review checkpoints.
-- A componentized plugin architecture for task management, execution panes, context capture, and rendered artifact views.
-- A starter vault with invented sample content, templates, and examples for testing the workflow shape without exposing a live vault.
+```text
+README.md      # repository overview
+docs/index.md  # GitHub Pages tools index
+```
 
-## Architecture at a glance
+## Public/private boundary
 
-| Layer | Responsibility | Related project |
-|---|---|---|
-| Planning substrate | Note-native task and time tracking in Obsidian; each task is a Markdown note with structured frontmatter and Bases-powered views. | [tasknotes](https://github.com/ytheesh96/tasknotes) |
-| Workspace starter | Reference workspace showing the TaskNotes → Hermes → artifact review loop. | [obsidian-agent-os](https://github.com/ytheesh96/obsidian-agent-os) |
-| Execution panes | Local CLI profile launch/continue flows, embedded terminal panes, prompt transfer, and context-aware environment wiring. | Agent Shell |
-| Workspace context | Active-note context, editor selection, cursor state, linked notes, open workspace surfaces, and pinned evidence. | Context API |
-| Artifact views | Rendered HTML/HTM dashboards inside Obsidian with constrained vault-relative navigation. | HTML View |
+This hub does not include a starter vault, private workspace notes, live task data, unpublished research content, or hidden agent outputs. Each linked tool owns its own installation, usage, and development documentation.
 
-## Component map
+## Maintaining the hub
 
-### tasknotes
+When adding or renaming Obsidian OS tools, update both:
 
-URL: https://github.com/ytheesh96/tasknotes
-
-TaskNotes is the note-native planning layer. It keeps tasks as Markdown files with frontmatter, which makes the task graph portable, inspectable, and easy for local automation to reason about. In this workspace, TaskNotes supplies the human-authored work items that later become executable cards.
-
-### obsidian-agent-os
-
-URL: https://github.com/ytheesh96/obsidian-agent-os
-
-Obsidian Agent OS packages the workspace story into a starter implementation: example TaskNotes templates, bridge field maps, privacy-oriented docs, review workflow examples, and verification scripts.
-
-### Agent Shell
-
-Agent Shell is the execution-pane layer for launching and continuing local CLI sessions through configurable profiles. It owns embedded terminal panes, prompt transfer, focus/restart behavior, and Context API environment wiring.
-
-### Context API
-
-Context API is the live workspace-context layer. It exposes active-note context, editor selection, cursor state, linked notes, open workspace surfaces, and pinned context through constrained local routes.
-
-### HTML View
-
-HTML View is the artifact-view layer. It opens vault-local HTML and HTM files in rendered or editor views, supports vault-relative navigation, and provides constrained dashboard interactions inside Obsidian.
-
-## What is included
-
-- A minimal starter vault with portable TaskNotes templates.
-- A TaskNotes → Hermes field-map skeleton.
-- A fake research-packet sample task showing the intended shape.
-- Architecture, privacy, demo, and review workflow documentation.
-- Dependency-free verification scripts for structure and privacy-oriented scans.
-- GitHub Actions CI that runs the starter-pack verifier and secret scan.
-
-## First task loop
-
-1. Create a TaskNote in Obsidian from `starter-vault/Templates/Hermes Task.md`.
-2. Submit the note to Hermes through the TaskNotes-Hermes bridge.
-3. Watch status and comments sync back to the TaskNote.
-4. Open the artifact from `hermes_artifacts`.
-5. Review the result, request changes, or archive the task.
+1. `README.md` for the GitHub repository view.
+2. `docs/index.md` for the GitHub Pages index.
 
 ## License
 
